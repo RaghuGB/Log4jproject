@@ -5,16 +5,20 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import org.apache.log4j.Logger;
+
 import org.apache.log4j.PropertyConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 public class MainApp {
 	
-	//enabling 
- private static Logger logger= Logger.getLogger(MainApp.class);
 	
- 			static {
- 				PropertyConfigurator.configure("src/main/java/properties/log4j.properties");
- 			}
+	static Logger logger=LoggerFactory.getLogger(MainApp.class);
+	static{
+		PropertyConfigurator.configure("src/main/java/properties/log4j.properties");
+	    
+	
+	}
+ 			
 	public static void main(String args[]) {
   
            logger.debug("main method started");
@@ -40,7 +44,7 @@ public class MainApp {
 		} catch (SQLException e) {
 			 logger.error(e.getMessage());
 		}catch (Exception e) {
-			 logger.fatal(e.getMessage());
+			 logger.error(e.getMessage());
 		} 
 		finally {
 			

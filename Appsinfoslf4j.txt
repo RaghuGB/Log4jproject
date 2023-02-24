@@ -1,0 +1,10 @@
+main method started
+jdbc driver loaded
+connection object created
+statment object created
+SQL query object executed
+result processed
+connection closed
+statment closed
+result set closed
+main method ended
