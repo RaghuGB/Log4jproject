@@ -9,6 +9,7 @@ import java.sql.Statement;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.SimpleLayout;
 public class MainApp {
 	
@@ -16,10 +17,7 @@ public class MainApp {
  private static Logger logger= Logger.getLogger(MainApp.class);
 	
  			static {
- 				SimpleLayout layout=new SimpleLayout();
- 			   ConsoleAppender appender=new ConsoleAppender(layout);
- 			   logger.addAppender(appender);
- 			   logger.setLevel(Level.INFO);
+ 				PropertyConfigurator.configure("src/main/java/properties/log4j.properties");
  			}
 	public static void main(String args[]) {
   
