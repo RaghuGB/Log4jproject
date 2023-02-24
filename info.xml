@@ -1,0 +1,40 @@
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828068" level="DEBUG" thread="main">
+<log4j:message><![CDATA[main method started]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828111" level="DEBUG" thread="main">
+<log4j:message><![CDATA[jdbc driver loaded]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828719" level="INFO" thread="main">
+<log4j:message><![CDATA[connection object created]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828723" level="DEBUG" thread="main">
+<log4j:message><![CDATA[statment object created]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828735" level="INFO" thread="main">
+<log4j:message><![CDATA[SQL query object executed]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828735" level="DEBUG" thread="main">
+<log4j:message><![CDATA[result processed]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828737" level="INFO" thread="main">
+<log4j:message><![CDATA[connection closed]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828737" level="INFO" thread="main">
+<log4j:message><![CDATA[statment closed]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828737" level="INFO" thread="main">
+<log4j:message><![CDATA[result set closed]]></log4j:message>
+</log4j:event>
+
+<log4j:event logger="log4jProject.MainApp" timestamp="1677240828737" level="DEBUG" thread="main">
+<log4j:message><![CDATA[main method ended]]></log4j:message>
+</log4j:event>
+
